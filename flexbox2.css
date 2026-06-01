@@ -8,20 +8,40 @@ body{
 
     display: flex;
     background-color: aqua;
-    height: 100vw;
-    width: 100%;
-    gap: 10px;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    gap: 10px 5px;
     flex-direction: row;
     
-    
-    
+    flex-wrap: wrap;
+    /*justify-content: center;-centraliza*/
+    /*justify-content: space-around; - deixa um espaço enntre os elentos*/
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+    /*align-items: flex-start;-deixa o itens no topo*/
+    /*align-items: flex-end;-deixa os itens embaixo*/
 }
+
 
 .container .item {
 
-    width: 30%;
-    height: 50%;
+    
+    height: 200px;
     background-color: blue;
     font-size: 50px;
     
+}
+
+.container .item-2 {
+background-color: blue;
+font-size: 50px;
+    flex-grow: 1;
+}
+
+.container .item-4 {
+background-color: blue;
+font-size: 50px;
+    flex-grow: 2;
 }
